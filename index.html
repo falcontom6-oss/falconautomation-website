@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FALCON AUTOMATION | Work Smarter. Operate Better.</title>
     <meta name="description" content="We help businesses eliminate repetitive work, streamline operations, and improve customer experiences through intelligent automation systems.">
-    
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/logo.png">
-    
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
@@ -31,18 +28,12 @@
     <!-- HERO SECTION -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <!-- 1. Logo -->
             <img src="assets/logo.png" alt="FALCON AUTOMATION Logo" class="hero-logo">
-            
-            <!-- 2. Text -->
             <p class="brand-line">INTELLIGENCE. AUTOMATION. GROWTH.</p>
             <h1>Work smarter. <br><span class="highlight">Operate better.</span></h1>
             <p class="subtitle">We help businesses eliminate repetitive work, streamline operations, and improve customer experiences through intelligent automation systems.</p>
-            
-            <!-- 3. Button -->
             <a href="#contact" class="btn-primary large-btn">Get Started</a>
             
-            <!-- 4. Banner -->
             <div class="banner-container">
                 <img src="assets/banner.png" alt="FALCON AUTOMATION - AI & Workflow Automation Agency" class="hero-banner">
             </div>
@@ -119,13 +110,25 @@
         </div>
     </section>
 
-    <!-- FOOTER / CONTACT -->
+    <!-- FOOTER / CONTACT FORM -->
     <footer id="contact">
         <div class="footer-content">
             <h2>Ready to automate your business?</h2>
             <p>Let's discuss how we can help you scale without the overhead.</p>
-            <a href="mailto:falconautomationhq@outlook.com" class="btn-primary large-btn">Email Us Now</a>
-            <p class="email-text">falconautomationhq@outlook.com</p>
+            
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="46e1f26c-512a-49e7-95dc-580ee5e4ed5b">
+                
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <textarea name="message" placeholder="Tell us about your automation needs..." rows="5" required></textarea>
+                
+                <input type="hidden" name="redirect" value="https://falconautomation-website.pages.dev/">
+                
+                <button type="submit" class="btn-primary large-btn">Send Message</button>
+            </form>
+            
+            <p class="email-text">Or email us directly: falconautomationhq@outlook.com</p>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 FALCON AUTOMATION. All rights reserved.</p>
